@@ -1,3 +1,7 @@
+if db_id('TestDev') is null
+	create Database TestDev;
+
+	Go
 create table FakeUser
 (ID INT IDENTITY (1,1) PRIMARY KEY,
 FirstName varchar(75),
